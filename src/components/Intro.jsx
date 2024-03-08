@@ -58,19 +58,19 @@ const Intro = () => {
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://github.com/UmairFaheem042">
             <i className="ri-github-line"></i>
             <span>GitHub</span>
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://www.linkedin.com/in/umair-faheem-b48765228/">
             <i className="ri-linkedin-fill"></i>
             <span>LinkedIn</span>
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://www.youtube.com/channel/UCUJlQr3wuGOhR8w7iIMKhGw">
             <i className="ri-youtube-line"></i>
             <span>YouTube</span>
           </a>
