@@ -52,7 +52,7 @@ const Intro = () => {
       {/* links */}
       <ul className="socials">
         <li>
-          <a href="mailto:umairfaheem.new@gmail.com">
+          <a href="mailto:umairfaheem.new042@gmail.com">
             <i className="ri-mail-line"></i>
             <span>Gmail</span>
           </a>
