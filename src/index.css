@@ -47,7 +47,7 @@ body,
   height: 100%;
 }
 
-*::selection{
+*::selection {
   background-color: #3be1ac;
   color: #0a0a0a;
 }
@@ -80,11 +80,11 @@ body,
 }
 
 .introduction h3 {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   gap: 0.5rem;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: clamp(1rem, 8vw, 2rem);
 }
 
 .introduction h3 span {
@@ -100,7 +100,7 @@ body,
 .introduction .desc p {
   color: rgba(255, 255, 255, 0.9);
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: clamp(0.7rem, 4vw, 0.9rem);
 }
 
 .introduction .desc p span {
@@ -111,10 +111,14 @@ body,
 .introduction .socials {
   display: flex;
   align-items: center;
+  width: 100%;
+  overflow-x: auto;
   gap: 1rem;
+  scrollbar-width: none;
 }
 
 .introduction .socials li {
+  flex-shrink: 0;
   cursor: pointer;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.08);
@@ -130,6 +134,7 @@ body,
 
 .introduction .socials li a {
   font-size: 0.85rem;
+  
   padding: 0.4rem 1rem;
   display: flex;
   align-items: center;
@@ -176,10 +181,12 @@ body,
   align-items: center;
   gap: 2px;
   font-size: 0.9rem;
+  font-size: clamp(0.7rem, 4vw, 0.9rem);
 }
 
 .project .projectDesc {
   font-size: 0.85rem;
+  font-size: clamp(0.7rem, 4vw, 0.9rem);
   font-weight: 600;
 }
 .projectDesc span {
@@ -205,4 +212,16 @@ footer p {
   font-size: 0.8rem;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 550px) {
+  .App{}
+  .introduction,.projects{
+    padding: 0;
+  }
+  .projects{
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
 }

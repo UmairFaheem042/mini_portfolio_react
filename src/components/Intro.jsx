@@ -10,7 +10,7 @@ const Intro = () => {
 
       {/* introductory statement */}
       <h3>
-        Hi, I'm
+        Hi there! I'm
         <Typewriter
           options={{
             strings: ["Umair Faheem", "The Project Code"],
